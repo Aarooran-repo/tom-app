@@ -1,0 +1,10 @@
+[Unit]
+Description=A Spring Boot application
+After=syslog.target
+ 
+[Service]
+User=aaroor
+ExecStart=/home/aarooran/Desktop/tom-app/target/tom-app-0.0.1-SNAPSHOT.jar.jar SuccessExitStatus=143 
+ 
+[Install] 
+WantedBy=multi-user.target
